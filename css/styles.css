@@ -8,6 +8,7 @@
 
 a {
   color: #222;
+  text-decoration: none;
 }
 
 a:hover {
@@ -55,12 +56,17 @@ ul li {
 
 }
 
+main {
+  min-height: 252px;
+  vertical-align: auto;
+}
 
 #search-body-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: auto;
+  height: 100%;
   padding-left: 20px;
   padding-right: 20px;
  }
@@ -142,3 +148,40 @@ user-select: none;
   margin-top: 2px;
   width: 14px;
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 47.5px;
+  background-color: #f2f2f2;
+}
+
+.nav-container {
+  width: 100%;
+}
+
+footer nav, footer div div {
+  width: 33.3%;
+  height: 47.5px;
+  display: flex;
+  align-items: center;
+}
+
+footer div div {
+  justify-content: center;
+}
+
+#footer-nav-links-1 {
+  justify-content: flex-start;
+}
+
+#footer-nav-links-2 {
+  justify-content: flex-end;
+}
+
+footer img {
+  height: 14px;
+}
+
