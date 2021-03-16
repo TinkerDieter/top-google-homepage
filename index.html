@@ -7,7 +7,7 @@
 </head>
 <body>
     <header>
-        <div class="nav-container">
+        <div class="nav-container" id="left-header">
             <nav class="header-nav-links">
                 <ul id="left-links">
                     <li><a class="nav-link" href="javascript:;" target="_top">About</a></li> <!--need to add anchors to the links-->
@@ -36,18 +36,19 @@
         <div id="search-body-container">
             <img id="logo" src="./img/google-logo.png" alt="Google logo">
             <form id="search-form" action="" method="GET">
-                
-                <div id="search-input">
-                    <label for="query"><img id="search-icon" src="./img/search-icon.png" alt="search-icon"></label>
-                    <input type="search" name="query" id="query" autofocus>
-                </div>
-            
-                <div id="submit-buttons">
-                    <input type="submit" value="Google Search">
-                    <input type="submit" value="I'm Feeling Lucky">
-                </div>
-            </form>
-        </div>
+            <form id="search-form" action="" method="GET">
+        <form id="search-form" action="" method="GET">             
+            <div id="search-input">
+                <label for="query"><img id="search-icon" src="./img/search-icon.png" alt="search-icon"></label>
+                <input type="search" name="query" id="query" autofocus>
+            </div>
+        
+            <div id="submit-buttons">
+                <input type="submit" value="Google Search">
+                <input type="submit" value="I'm Feeling Lucky">
+            </div>
+        </form>
+    </div>
     </main>
     <footer>
         <div class="nav-container">
@@ -72,5 +73,6 @@
                 </ul>
             </nav>
         </div>
+    </div>
     </footer>
 </body>

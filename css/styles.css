@@ -1,5 +1,4 @@
 
-
 .app-button {
   width: 24px; 
   color: #5f6368;
@@ -32,13 +31,15 @@ header {
 }
 
 .nav-container {
-  width: 50vw;
   display: flex;
   align-items: center;
 }
 
 #left-links {
   margin-left: 24px;
+}
+#left-header {
+  width: 30vw;
 }
 
 #right-links {
@@ -47,6 +48,7 @@ header {
 
 .nav-container#right-header {
   justify-content: flex-end;
+  width: 70vw;
 }
 
 ul li {
@@ -194,10 +196,14 @@ footer {
 }
 
 footer nav, footer div div {
-  width: 33.3%;
   height: 47.5px;
   display: flex;
   align-items: center;
+}
+
+footer div div {
+  width: 185px;
+  margin: auto;
 }
 
 footer div div {
@@ -213,6 +219,7 @@ li a {
 }
 
 #footer-nav-links-1 {
+  width: 40vw;
   justify-content: flex-start;
 }
 
@@ -225,6 +232,7 @@ li a {
 }
 
 #footer-nav-links-2 {
+  width: 40vw;
   justify-content: flex-end;
 }
 
@@ -240,3 +248,44 @@ footer img {
   height: 14px;
 }
 
+@media (max-width: 1200px){
+  footer {
+    height: 95px;
+  }
+  .nav-container {
+    flex-wrap: wrap;
+  }
+  #footer-nav-links-1 {
+    width: 60vw;
+    justify-content: center;
+  }
+  #footer-nav-links-2 {
+    justify-content: center;
+    width: 40vw;
+  }
+  #commitment-campaign {
+    width: 100vw;
+    order: -1;
+  }
+}
+
+@media (max-width: 620px) {
+  footer {
+    height: 142.5px;
+  }
+  .nav-container {
+    flex-wrap: wrap;
+  }
+  #footer-nav-links-1 {
+    width: 100vw;
+    order: -1;
+  }
+  #footer-nav-links-2 {
+    width: 100vw;
+  }
+  #commitment-campaign {
+    width: 100vw;
+    order: -2;
+  }
+}
+}
