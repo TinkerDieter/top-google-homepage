@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<header>
+<head>
     <link rel="stylesheet" href="./css/css-reset.css">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Google</title>
-</header>
+</head>
 <body>
     <header>
         <div class="nav-container">
             <nav class="header-nav-links">
-                <ul>
+                <ul id="left-links">
                     <li><a class="nav-link" href="javascript:;" target="_top">About</a></li> <!--need to add anchors to the links-->
                     <li><a class="nav-link" href="javascript:;" target="_top">Store</a></li>
                 </ul>
             </nav>
         </div>
-        <div class="nav-container">
+        <div class="nav-container" id="right-header">
+            <div #right-links-container>
             <nav class="header-nav-links">
-                <ul>
+                <ul id="right-links">
                     <li><a class="nav-link" href="javascript:;" target="_top">Gmail</a></li>
                     <li><a class="nav-link" href="javascript:;" target="_top">Images</a></li>
                 </ul>
@@ -28,15 +29,18 @@
             </svg>
             <a id="sign-in" href="javascript:;" target="_top">Sign In</a>
         </div>
+        </div>
     </header>
     <main>
         <div id="search-body-container">
-            <img src="./img/google-logo.png" alt="Google logo">
+            <img id="logo" src="./img/google-logo.png" alt="Google logo">
             <form id="search-form" action="" method="GET">
+                
                 <div id="search-input">
-                    <label for="query"><img src="./img/search-icon.png" alt="search-icon"></label>
+                    <label for="query"><img id="search-icon" src="./img/search-icon.png" alt="search-icon"></label>
                     <input type="search" name="query" id="query" autofocus>
                 </div>
+            
                 <div id="submit-buttons">
                     <input type="submit" value="Google Search">
                     <input type="submit" value="I'm Feeling Lucky">

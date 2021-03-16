@@ -1,6 +1,144 @@
+
 .app-button {
-    width: 24px; 
-    color: #5f6368;
-    opacity: 1;
-    fill: currentcolor;
-  }
+  width: 24px; 
+  color: #5f6368;
+  opacity: 1;
+  fill: currentcolor;
+}
+
+a {
+  color: #222;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer a {
+  color: #70757a;
+}
+
+body {
+  font-size: 14px;
+  font-family: arial,sans-serif;
+}
+
+header {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-container {
+  width: 50vw;
+  display: flex;
+}
+
+.nav-container#right-header {
+  justify-content: flex-end;
+}
+
+ul li {
+  list-style: none;
+  display: inline-flex;
+}
+
+.button-container {
+  
+}
+
+.header-nav-links {
+  
+}
+
+.nav-container ul {
+
+}
+
+
+#search-body-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+ }
+
+ form {
+   width: 100%;
+   height: 160px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+ }
+
+#search-body-container #logo {
+  width: 272px;
+  height: 92px;
+}
+
+#search-body-container #search-input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 44px;
+  max-width: 584px;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  margin-top: 2px;
+  margin-left: 0;
+}
+
+#search-body-container #submit-buttons {
+  display: flex;
+  height: auto;
+  justify-content: space-evenly;
+  padding-top: 0px;
+  width: 350px;
+  position: relative;
+  top: 2px;
+}
+#submit-buttons input {
+background-color: #f8f9fa;
+border: 1px solid #f8f9fa;
+border-radius: 4px;
+color: #3c4043;
+font-family: arial,sans-serif;
+font-size: 14px;
+margin: 0px -20px;
+padding: 0 16px;
+line-height: 27px;
+height: 36px;
+min-width: 54px;
+text-align: center;
+cursor: pointer;
+user-select: none;
+}
+
+#submit-buttons input[type="submit"]:hover {
+  box-shadow: 0 1px 1px rgba(0,0,0,.1);
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  color: #202124;
+}
+
+#submit-buttons input[type="submit"]:focus {
+  border: 1px solid #4d90fe;
+  outline: none;
+}
+
+#search-input input {
+  height: 34px;
+  font-size: 16px;
+  margin-left: 17px;
+  margin-right: 17px;
+  width: 100%;
+}
+
+#search-body-container #search-icon {
+  margin-left: 17px;
+  margin-top: 2px;
+  width: 14px;
+}
